@@ -1,0 +1,259 @@
+*{margin: 0;padding: 0;}
+
+.welcome p {
+    margin-top: 15px;
+}
+
+.welcome {
+    color: whitesmoke;
+    text-align: center;
+}
+
+i.fas.fa-arrow-down {
+    color: #47525D;
+    font-size: 20px;
+}
+
+.next-page-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    border: 1px solid #1C1C1C;
+    border-radius: 20px;
+    align-items: center;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.next-page-container:hover {
+    background: gray;
+}
+
+.next-page-container:hover i {
+    color: black;
+}
+
+.tweet-img {
+    
+    flex-basis: 50%;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.tweets-trending ul li {
+    color: #848586;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #D8D8D8;
+    padding-left: 40px;
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.tweets-trending h4 {
+    color: #848586;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #D8D8D8;
+    padding-left: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.tweets-trending {
+    width: 85%;
+    height: 300px;
+    background: #F2F2F2;
+    border-radius: 40px;
+    margin-top: 25px;
+}
+
+
+.tweet-user-profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid #979797;
+    margin-right: 13px;
+    background-size: cover;
+    background-position: center;
+}
+
+.tweet-user-username {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.tweet-user-fullname {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.tweet-date-container {
+    color: #47525D;
+    margin: -10px 0 20px 20px;
+    font-size: 15px;
+}
+
+.tweet-text-container {
+    margin: 20px;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 15px;
+}
+
+.tweet-images-container {
+    height: 200px;
+    margin: 20px 20px 0 20px;
+    border: 1px solid #1C1C1C;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.tweet-video-container{
+    height: 200px;
+    margin: 20px 20px 0 20px;
+    border: 1px solid #1C1C1C;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.tweet-user-info {
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+i.fas.fa-search {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+input#user-search-input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input#user-search-input:focus {outline: none;}
+
+.home-link {
+    border-right: 5px solid #00ADFF;
+    color: #00ADFF;
+}
+
+.logo i {
+    font-size: 35px;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(/profile-img.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.logo, .home-link, .profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 30px;
+    align-items: center;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.tweets-sidebar {
+    margin: 20px;
+    width: 30%;
+    height: 500px;
+    background-color: white;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.tweet-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid #1C1C1C;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tweets-search-container {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #979797;
+}
+
+.tweets-list {
+    /* height: 500px; */
+    margin: 20px;
+}
+
+.tweets-sidebar-container {
+    flex: .8;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-container {
+    width: 20%;
+    max-width: 100px;
+    min-width: 70px;
+    color: white;
+    border: 1px solid #1C1C1C;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0F0F11;
+}
+
+

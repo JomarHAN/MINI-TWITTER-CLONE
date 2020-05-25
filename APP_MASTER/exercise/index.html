@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Twitter Clone</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
+    </head>
+    <body>
+        <div class="container home-page">
+            <div class="navigation-container">
+                <div class="navigation">
+                    <div class="logo">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="home-link">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <div class="profile-container">
+                        <div class="profile"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="tweets-search-container">
+                    <input type="text" id="user-search-input" placeholder="Search Twitter" onkeyup="onEvent(event)">
+                    <i class="fas fa-search fa-flip-horizontal" onclick="getTwitterData()"></i>
+                </div>
+                <div class="tweets-list">
+                    <div class="welcome">
+                        <h2>Welcome to Twitter!</h2>
+                        <p>Use the search above to see what's happening around the world</p>
+                    </div>
+                    <!-- <div class="tweet-container">
+                        <div class="tweet-user-info">
+                            <div class="tweet-user-profile">
+
+                            </div>
+                            <div class="tweet-user-name-container">
+                                <div class="tweet-user-fullname">
+                                    Jomar HA Nguyen
+                                </div>
+                                <div class="tweet-user-username">
+                                    @jomarhan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tweet-video-container">
+                            <video controls>
+                                <source src="https://video.twimg.com/ext_tw_video/1263909805594378247/pu/vid/320x320/23efM3hEHNOMjdkt.mp4?tag=10" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="tweet-images-container">
+                            <div class="tweet-img"></div>
+                            <div class="tweet-img"></div>
+                            <div class="tweet-img"></div>
+                     
+                        </div>
+                        <div class="tweet-text-container">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                        </div>
+                        <div class="tweet-date-container">
+                            2 hours ago
+                        </div>
+                    </div> -->
+                </div>
+                <div class="next-page-container" id="next-page" onclick="onNextPage()" >
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+            <div class="tweets-sidebar-container">
+                <div class="tweets-sidebar">
+                    <div class="tweets-trending">
+                        <h4>Trends for you</h4>
+                        <ul>
+                            <li onclick="selectTrend(this)">#Coding</li>
+                            <li onclick="selectTrend(this)">#JavaScript</li>
+                            <li onclick="selectTrend(this)">#Python</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/index.js" async defer></script>
+    </body>
+</html>
